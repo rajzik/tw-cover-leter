@@ -1,6 +1,12 @@
 /** @type {import("prettier").Config} */
-export default {
-  plugins: ["prettier-plugin-tailwindcss", 'prettier-plugin-astro'],
+const config = {
+  singleQuote: true,
+  trailingComma: 'all',
+  printWidth: 80,
+  jsxSingleQuote: false,
+  experimentalTernaries: true,
+  singleAttributePerLine: true,
+  plugins: ['prettier-plugin-tailwindcss', 'prettier-plugin-astro'],
   overrides: [
     {
       files: '*.astro',
@@ -10,3 +16,5 @@ export default {
     },
   ],
 };
+
+export default config;
