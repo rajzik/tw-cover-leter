@@ -18,7 +18,7 @@ export default {
         'site-small': ['aside', 'main'],
       },
       gridTemplateColumns: {
-        site: '1fr auto',
+        site: 'minmax(38rem, 1fr) auto',
         'site-small': '1fr',
       },
     },
