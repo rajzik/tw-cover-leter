@@ -1,0 +1,32 @@
+{
+  "name": "tw-cover-letter",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "astro": "astro",
+    "build": "astro check && astro build",
+    "dev": "astro dev",
+    "lint": "ESLINT_USE_FLAT_CONFIG=true npx eslint -c eslint.config.mjs .",
+    "preview": "astro preview",
+    "start": "astro dev"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/tailwind": "^5.1.0",
+    "@tailwindcss/postcss": "4.0.0-alpha.11",
+    "astro": "^4.5.10",
+    "tailwindcss": "4.0.0-alpha.11"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-astro": "^0.33.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-unicorn": "^51.0.1",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "typescript": "^5.4.3",
+    "typescript-eslint": "^7.4.0"
+  }
+}
