@@ -1,14 +1,15 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.experimental.useFlatConfig": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
   "[typescriptreact][typescript][javascript][javascriptreact]": {
-    "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
       "source.addMissingImports": "never",
       "source.organizeImports": "never",
-      "source.format": "explicit",
+      "source.format": "always",
       "source.fixAll.eslint": "explicit"
     }
   },
@@ -16,7 +17,7 @@
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.organizeImports": "always",
-      "source.format": "explicit",
+      "source.format": "always",
       "source.fixAll.eslint": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"

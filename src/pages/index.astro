@@ -1,29 +1,43 @@
 ---
-import '../app.css';
+import { Content as Changelog } from '../components/Changelog.md';
+import { Content as Introduction } from '../components/Introduction.md';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Jan Silhan - cover letter">
-  <header class="pb-10">
+  <header class="absolute z-10">
     <nav
-      class="shadow-sm fixed top-5 left-1/2 -translate-x-1/2 border border-gray-200 rounded-2xl flex"
+      class="fixed left-1/2 top-5 flex -translate-x-1/2 overflow-hidden rounded-2xl border border-gray-200 shadow-sm"
     >
       <a
-        href="#about"
-        class="py-1 px-4"
-        >About</a
+        href="#breaking-changes"
+        class="bg-slate-300 px-4 py-1 text-slate-900 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-900"
       >
+        Experience
+      </a>
       <a
-        href="#test"
-        class="py-1 px-4 border-l border-gray-200"
-        >Test</a
+        href="#features"
+        class="border-l bg-slate-300 px-4 py-1 text-slate-900 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-900"
       >
+        Projects
+      </a>
+      <a
+        href="#bugfixes"
+        class="border-l bg-slate-300 px-4 py-1 text-slate-900 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-900"
+      >
+        Technologies
+      </a>
     </nav>
   </header>
-  <main>
-    <div id="about">Something here</div>
+  <main class="xl:xl-prose grid-in-main prose p-4 dark:prose-invert lg:p-20">
+    <Changelog />
   </main>
-  <aside class="fixed right-0 border-l h-full top-0 p-8 min-w-60">
-    <h2>Jan Silhan</h2>
+  <aside
+    class="grid-in-aside border-b p-8 pt-20 lg:sticky lg:right-0 lg:top-0 lg:h-screen lg:min-w-96 lg:overflow-x-auto lg:border-b-0 lg:border-l lg:p-8 lg:pt-20"
+  >
+    <h2 class="mb-3 text-4xl lg:text-7xl">Jan Silhan</h2>
+    <div class="xl:xl-prose prose dark:prose-invert">
+      <Introduction />
+    </div>
   </aside>
 </Layout>

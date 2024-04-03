@@ -6,7 +6,7 @@ const config = {
   jsxSingleQuote: false,
   experimentalTernaries: true,
   singleAttributePerLine: true,
-  plugins: ['prettier-plugin-tailwindcss', 'prettier-plugin-astro'],
+  plugins: ['prettier-plugin-astro', 'prettier-plugin-tailwindcss'],
   overrides: [
     {
       files: '*.astro',
